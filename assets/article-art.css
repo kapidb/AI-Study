@@ -1,0 +1,26 @@
+/* Subtle decorative artwork: only the image layer is translucent. */
+.library-home .library-card{position:relative;isolation:isolate;overflow:hidden}
+.library-home .library-card::before{content:"";position:absolute;z-index:-1;pointer-events:none;right:-8px;top:16px;width:52%;max-width:230px;height:190px;background:var(--article-art) no-repeat right top/contain;opacity:.16;-webkit-mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,.6) 35%,#000 80%);mask-image:linear-gradient(90deg,transparent,rgba(0,0,0,.6) 35%,#000 80%)}
+.library-home [data-article-id="001"]{--article-art:url("articles/001.webp")}
+.library-home [data-article-id="002"]{--article-art:url("articles/002.webp")}
+.library-home [data-article-id="003"]{--article-art:url("articles/003.webp")}
+.library-home [data-article-id="004"]{--article-art:url("articles/004.webp")}
+.library-home [data-article-id="005"]{--article-art:url("articles/005.webp")}
+.library-home [data-article-id="006"]{--article-art:url("articles/006.webp")}
+.library-home [data-article-id="007"]{--article-art:url("articles/007.webp")}
+.library-home [data-article-id="008"]{--article-art:url("articles/008.webp")}
+.library-home [data-article-id="009"]{--article-art:url("articles/009.webp")}
+.library-home [data-article-id="010"]{--article-art:url("articles/010.webp")}
+.library-home [data-article-id="011"]{--article-art:url("articles/011.webp")}
+.library-home [data-article-id="012"]{--article-art:url("articles/012.webp")}
+.library-home [data-article-id="013"]{--article-art:url("articles/013.webp")}
+.library-home [data-article-id="014"]{--article-art:url("articles/014.webp")}
+.library-home [data-article-id="015"]{--article-art:url("articles/015.webp")}
+.library-home [data-article-id="016"]{--article-art:url("articles/016.webp")}
+.library-home [data-article-id="017"]{--article-art:url("articles/017.webp")}
+.library-home [data-article-id="018"]{--article-art:url("articles/018.webp")}
+.library-home [data-article-id="019"]{--article-art:url("articles/019.webp")}
+.library-home [data-article-id="020"]{--article-art:url("articles/020.webp")}
+@media(max-width:580px){.library-home .library-card::before{width:48%;height:160px;right:-10px;top:20px;opacity:.13}}
+@media print{.library-home .library-card::before{display:none}}
+
